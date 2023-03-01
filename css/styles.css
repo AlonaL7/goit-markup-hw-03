@@ -4,16 +4,17 @@
   --secondary-text-color: #434455;
 }
 h1,h2,h3,h4,p{
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 ul, ol{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 img{
   display: block;
+  max-width: 100%;
+  width: 100%;
+
 }
 button{
   cursor: pointer;
@@ -29,17 +30,18 @@ button{
 body {
   font-family: "Roboto", sans-serif;
   color: #2e2f42;
+  margin: 0;
 }
 .container{
-  width: 1128px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 .section{
-  padding-top: 104px;
-  padding-bottom: 136px;
+  padding-top: 120px;
+  padding-bottom: 120px
 }
 .main-header .container {
 display: flex;
@@ -145,8 +147,7 @@ padding: 16px 32px;
 }
 .prfbtn-list{
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
 }
 .prfbnt-item:not(:nth-child(5)){
   margin-right: 24px;
@@ -206,7 +207,7 @@ padding: 12px 24px;
 .hero {
   background-color: var(--praimary-text-color);
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 .hero-section{
   display: flex;
@@ -230,6 +231,7 @@ padding: 12px 24px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--praimary-text-color);
+  margin-bottom: 8px;
 }
 .studio-title {
   font-weight: 700;
@@ -239,7 +241,7 @@ padding: 12px 24px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--praimary-text-color);
-  margin-bottom: 72px;
+margin-bottom: 72px;
 }
 .description {
   font-size: 16px;
@@ -298,6 +300,10 @@ padding: 12px 24px;
 .strategies-card:not(:nth-child(4)){
   margin-right: 24px;
 }
+.strategies-card{
+  margin: 0;
+  width: 264px;
+}
 .doing-list{
   display: flex;
 }
@@ -314,6 +320,8 @@ padding: 12px 24px;
 
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-description {
   font-family: 'Roboto';
