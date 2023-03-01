@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --accent-color: #404bbf;
   --praimary-text-color: #2e2f42;
@@ -133,8 +138,8 @@ font-style: normal;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-
 padding: 16px 32px;
+border: none;
 }
 .studio-btn:hover,
 .studio-btn:focus {
@@ -263,11 +268,6 @@ margin-bottom: 72px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  border-right: 1px solid #E7E9FC;
-  border-bottom: 1px solid #E7E9FC;
-  border-left: 1px solid #E7E9FC;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 .title-portfolio{
   font-weight: 500;
@@ -275,11 +275,17 @@ margin-bottom: 72px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--praimary-text-color);
+  margin-bottom: 8px;
+  
+}
+.portf-descr{
   border-right: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
   border-left: 1px solid #E7E9FC;
   padding-top: 32px;
-  padding-bottom: 8px;
   padding-left: 16px;
+  padding-bottom: 32px;
+
 }
 
 .visually-hidden {
@@ -332,7 +338,10 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
   color: #e7e9fc;
+}
+.footer-p{
   width: 264px;
+
 }
 .logo-footer {
   font-family: "Raleway";
